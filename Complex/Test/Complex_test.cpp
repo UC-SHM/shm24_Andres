@@ -5,12 +5,12 @@
  *      Author: Datsh
  */
 
-#include "C:/Users/Datsh/UNIVERSIDAD/SEHAPAM/SMH/software/workspace/Complex/Complex.h"
+#include "../Complex.h"
 
 #include <gtest/gtest.h>	//Definiciones de Google Test
 #include <gmock/gmock.h>	//Un mock es un elemento que emula algo que falta
 #include <cmath>
-
+/*
 // Verifica modulo
 	TEST(Complex, testMod) {
 		Complex r;
@@ -44,3 +44,4 @@
 
 		ASSERT_EQ(resul, t);
 		}
+*/

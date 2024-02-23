@@ -88,7 +88,7 @@ void Complex::get(float &real1, float &imag1) {
 	real1 = real;
 	imag1 = imag;
 }
-
+/*
 //Sobrecarga de == para usarlo en los ASSERT_EQ al comprar numeros complejos
 bool Complex::operator==(const Complex &rhs) {
 	bool ret;
@@ -98,7 +98,6 @@ bool Complex::operator==(const Complex &rhs) {
 	} else {
 		ret = false;
 	}
+	return ret;
 }
-
-
-// CAMBIO
+*/
