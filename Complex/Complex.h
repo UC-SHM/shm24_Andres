@@ -23,7 +23,7 @@ public:
 	void set(float real1, float imag1);
 	void get(float &real1, float &imag1);	//& indica un alias, es como un puntero
 
-	bool operator==(const Complex &rhs);
+	//bool operator==(const Complex &rhs);
 };
 
 #endif /* COMPLEX_H_ */
