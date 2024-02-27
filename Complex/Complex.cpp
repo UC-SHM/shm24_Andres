@@ -8,7 +8,14 @@
 #include "Complex.h"
 #include <iostream>
 #include <cmath>
+#include <chrono>
+
 using namespace std;
+
+using std::chrono::high_resolution_clock;
+using std::chrono::duration_cast;
+using std::chrono::duration;
+using std::chrono::milliseconds;
 
 // Constructor con valores a cero
 Complex::Complex() {
@@ -37,8 +44,10 @@ Complex::~Complex() {
 //Modulo del numero complejo
 float Complex::mod() {
 	double real2, imag2;
+
 	real2 = pow((double)real, 2);
 	imag2 = pow((double)imag, 2);
+
 	return (float)sqrt(real2 + imag2);
 }
 
@@ -66,7 +75,6 @@ Complex Complex::operator*(const Complex &rhs) {
 
 //Sobrecarga de =
 Complex &Complex::operator=(const Complex &rhs) {
-
 	if(this == &rhs) {
 		return *this;
 	} else {
